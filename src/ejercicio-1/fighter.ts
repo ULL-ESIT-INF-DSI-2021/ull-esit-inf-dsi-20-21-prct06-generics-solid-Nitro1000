@@ -1,5 +1,17 @@
-
+/**
+ * Superclase abstracta que representa a un luchador
+ */
 export abstract class Fighter {
+  /**
+   * Constructor de la clase
+   * @param name Nombre del luchador
+   * @param phrase Frace representativa del luchador
+   * @param isStrongTo Fortalezas del luchador
+   * @param hp Puntos de salud
+   * @param atk ataque
+   * @param def Defensa
+   * @param vel Velocidad
+   */
   constructor(private readonly name: string, 
     private readonly phrase: string, 
     private readonly isStrongTo: string[],
