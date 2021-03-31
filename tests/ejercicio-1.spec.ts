@@ -11,7 +11,7 @@ describe('El combate definitivo', () => {
   describe('Prueba de las clases', () => {
     it('Combate entre Goku y Pikachu', () => {
       const gerrero = new DragonBall('Goku', 'kamehameha', ['Pokemon', 'Digimon'], 1000, 500, 200, 400);
-      const pokemon = new Pokemon('Pikachu', 'electrico', 'pika pika chuuuu', ['Dragon', 'Digimon'], 2000, 100, 50, 100);
+      const pokemon = new Pokemon('Pikachu', 'electrico', 'pika pika chuuuu', ['Dragon', 'Digimon'], 200, 100, 50, 100);
       const fight = new Combat(gerrero, pokemon);
       expect(fight.fight()).to.eql('Ganó: Goku');
     });
