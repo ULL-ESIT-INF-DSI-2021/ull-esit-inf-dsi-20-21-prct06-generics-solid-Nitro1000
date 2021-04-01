@@ -69,12 +69,24 @@ export class Force implements isConvertible<forceOptions> {
     }
     return result;
   }
+  /**
+   * Se obtiene la fuerza
+   * @returns valor fuerza
+   */
   public getforce(): number {
     return this.value;
   }
+  /**
+   * Se obtiene la unidad de medida actual
+   * @returns unidad actual
+   */
   public getCurrent(): forceOptions {
     return this.currentUnit;
   }
+  /**
+   * Se obtiene la unidad de medida nueva
+   * @returns unidad nueva
+   */
   public getNew(): forceOptions {
     return this.newUnit;
   }

@@ -69,12 +69,24 @@ export class Mass implements isConvertible<massOptions> {
     }
     return result;
   }
+  /**
+   * Se obtiene la masa
+   * @returns valor masa
+   */
   public getMass(): number {
     return this.value;
   }
+  /**
+   * Se obtiene la unidad de medida actual
+   * @returns unidad actual
+   */
   public getCurrent(): massOptions {
     return this.currentUnit;
   }
+  /**
+   * Se obtiene la unidad de medida nueva
+   * @returns unidad nueva
+   */
   public getNew(): massOptions {
     return this.newUnit;
   }

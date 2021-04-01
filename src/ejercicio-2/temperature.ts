@@ -69,12 +69,24 @@ export class Temperature implements isConvertible<temperatureOptions> {
     }
     return result;
   }
+  /**
+   * Se obtiene la temperatura
+   * @returns valor temperatura
+   */
   public gettemperature(): number {
     return this.value;
   }
+  /**
+   * Se obtiene la unidad de medida actual
+   * @returns unidad actual
+   */
   public getCurrent(): temperatureOptions {
     return this.currentUnit;
   }
+  /**
+   * Se obtiene la unidad de medida nueva
+   * @returns unidad nueva
+   */
   public getNew(): temperatureOptions {
     return this.newUnit;
   }

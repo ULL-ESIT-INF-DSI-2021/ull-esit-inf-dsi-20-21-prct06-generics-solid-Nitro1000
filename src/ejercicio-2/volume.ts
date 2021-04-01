@@ -69,12 +69,24 @@ export class Volume implements isConvertible<volumeOptions> {
     }
     return result;
   }
+  /**
+   * Se obtiene el volumen
+   * @returns valor volumen
+   */
   public getvolume(): number {
     return this.value;
   }
+  /**
+   * Se obtiene la unidad de medida actual
+   * @returns unidad actual
+   */
   public getCurrent(): volumeOptions {
     return this.currentUnit;
   }
+  /**
+   * Se obtiene la unidad de medida nueva
+   * @returns unidad nueva
+   */
   public getNew(): volumeOptions {
     return this.newUnit;
   }

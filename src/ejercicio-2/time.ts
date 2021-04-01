@@ -69,12 +69,24 @@ export class Time implements isConvertible<timeOptions> {
     }
     return result;
   }
+  /**
+   * Se obtiene el tiempo
+   * @returns valor tiempo
+   */
   public getTime(): number {
     return this.value;
   }
+  /**
+   * Se obtiene la unidad de medida actual
+   * @returns unidad actual
+   */
   public getCurrent(): timeOptions {
     return this.currentUnit;
   }
+  /**
+   * Se obtiene la unidad de medida nueva
+   * @returns unidad nueva
+   */
   public getNew(): timeOptions {
     return this.newUnit;
   }
