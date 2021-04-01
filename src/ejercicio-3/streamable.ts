@@ -1,8 +1,8 @@
 /**
- * Allows to create a collection of streamable items
- * @function addEmissions Allows to insert a new emission to the collection
- * @function getEmissions Returns the collection
- * @function getNumberOfEmissions Obtains the length of the collection
+ * Propiedades y métodos con los que debería contar una colección de emisiones
+ * @function addEmissions añade emisiones
+ * @function getEmissions Retorna las emisiones
+ * @function getNumEmissions Retorna el numero de emisiones
  */
 export interface Streamable<T> {
     addEmissions(newemissions: T): void;

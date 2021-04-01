@@ -157,7 +157,7 @@ Las clases son las siguientes:
 ---------------------
 
 ### Ejercicio 3<a name="id4"></a>
-En este ejercicio se nos pide trabajar con interfaces genericas y con clases. Se tiene que hacer una clase Movie, Documentary y Serie
+En este ejercicio se nos pide trabajar con interfaces genericas y con clases. Se tiene que hacer una clase Movie, Documentary y Serie.
 A continuación se muestra el spec correspondiente a este ejercicio.
 
 ```typescript

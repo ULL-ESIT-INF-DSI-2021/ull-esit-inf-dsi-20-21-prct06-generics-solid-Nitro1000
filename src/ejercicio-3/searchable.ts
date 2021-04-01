@@ -1,7 +1,7 @@
 import {Streamable} from './streamable';
 
 /**
- * Permite implementar el método de búsqueda
+ * Busqueda de elementos
  * @function search Permite buscar elementos.
  */
 export interface Searchable<T> extends Streamable<T> {

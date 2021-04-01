@@ -14,7 +14,7 @@ export abstract class BasicStreamableCollection<T> implements Searchable<T> {
   /**
    * Permite buscar emisiones por un valor como título, año, etc.
    * @param param El parámetro por el que desea buscar
-   * @param value El valor del parámetro
+   * @param value Valor a buscar
    */
   abstract search(param: string, value: string): T[];
 
@@ -32,8 +32,8 @@ export abstract class BasicStreamableCollection<T> implements Searchable<T> {
   abstract getEmissions(): T[];
 
   /**
-   * Obtiene la duración de la colección
-   * @returns Duración de la colección
+   * Numero de emisiones
+   * @returns Numero de emisiones
    */
   getNumEmissions() {
     return this.emissions.length;
