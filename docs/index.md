@@ -1,4 +1,4 @@
-# Práctica 5 - Objetos, clases e interfaces
+# Práctica 6 - Clases e interfaces genéricas. Principios SOLID
 
 
 ## Índice
@@ -181,6 +181,32 @@ Las clases son las siguientes:
 
 ## Coveralls<a name="coveralls"></a>
 Lo primero que tenemos que hacer es instalar las dependencias que se encesitan para integrar los informes que genera *Istanbul* sobre el cubrimiento del codigo a partir de las pruebas llevadas a cabo con *Mocha* y *Chai* con la herramienta *Coveralls* para eso usamos el siguiente comando `$ npm install --save-dev nyc coveralls` y seguidamente nos vamos al fichero *package.json* y agregamos el script *"coverage":"nyc npm test"*. Hecho esto ahora creamos el fichero *.coveralls.yml* y añadimos el token que nos da coveralls en su pagina.
+
+Resultados del Coveralls:
+```bash
+-------------------------------|---------|----------|---------|---------|-------------------
+File                           | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+-------------------------------|---------|----------|---------|---------|-------------------
+All files                      |    60.7 |    37.88 |   91.23 |   59.51 |                   
+ ejercicio-1                   |   85.07 |    73.33 |   85.71 |   84.85 |                   
+  combat.ts                    |   78.13 |    66.67 |     100 |   77.42 | 34,38-41,47,60    
+  digimon.ts                   |      80 |      100 |      50 |      80 | 33                
+  dragonball.ts                |     100 |      100 |     100 |     100 |                   
+  fighter.ts                   |   93.33 |      100 |    87.5 |   93.33 | 83                
+  pokemon.ts                   |   85.71 |      100 |   66.67 |   85.71 | 41                
+  universes.ts                 |     100 |      100 |     100 |     100 |                   
+ ejercicio-2                   |   37.21 |    15.38 |     100 |   37.21 |                   
+  force.ts                     |   37.21 |    15.38 |     100 |   37.21 | 24-26,32-33,37-68 
+  time.ts                      |   37.21 |    15.38 |     100 |   37.21 | 28-33,37-68       
+  volume.ts                    |   37.21 |    15.38 |     100 |   37.21 | 28-33,37-68       
+ ejercicio-3                   |   83.61 |    66.67 |   90.48 |   82.69 |                   
+  basicStreamableCollection.ts |      75 |      100 |   66.67 |      75 | 26                
+  documentaryfilm.ts           |   73.68 |       50 |   83.33 |      75 | 42-46             
+  movie.ts                     |   89.47 |       75 |     100 |    87.5 | 45-46             
+  series.ts                    |   89.47 |       75 |     100 |    87.5 | 45-46             
+-------------------------------|---------|----------|---------|---------|-------------------
+```
+En el ejercicio 2 me sale ese nivel por los diferentes casos de los swicht.
 
 
 ---------------------
