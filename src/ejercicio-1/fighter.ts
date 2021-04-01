@@ -21,32 +21,64 @@ export abstract class Fighter {
     private readonly vel: number) {
 
   }
+  /**
+   * Obtenemos el nombre
+   * @returns nombre
+   */
   getName(): string {
     return this.name;
   }
 
+  /**
+   * Obtenemos la frase del luchador
+   * @returns frase
+   */
   getPhrase(): string {
     return this.phrase;
   }
 
+  /**
+   * Obtenemos las fortalezas
+   * @returns fortalezas
+   */
   getIsStrongTo(): string[] {
     return this.isStrongTo;
   }
 
+  /**
+   * Obtenemos el universo del luchador
+   * @returns universo
+   */
   abstract getUniverse(): string;
 
+  /**
+   * Obtenemos la vida
+   * @returns vida
+   */
   getHP(): number {
     return this.hp;
   }
 
+  /**
+   * Obtenemos el ataque
+   * @returns ataque
+   */
   getATK(): number {
     return this.atk;
   }
 
+  /**
+   * Obtenemos la defensa
+   * @returns defensa
+   */
   getDEF(): number {
     return this.def;
   }
 
+  /**
+   * Obtenemos la velocidad
+   * @returns velocidad
+   */
   getVEL(): number {
     return this.vel;
   }
