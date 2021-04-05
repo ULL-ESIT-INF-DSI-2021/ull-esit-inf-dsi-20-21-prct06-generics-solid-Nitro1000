@@ -1,6 +1,8 @@
 /* eslint-disable max-len */
 
-
+/**
+ * Clase RandomNumber repersenta un numero aleatorio
+ */
 export class RandomNumber {
   private randNumF01: number;
   private randNumFNM: number=0;
